@@ -1,7 +1,5 @@
 {
-  "ingresses": [
-    "https://tilgangsmaskin.intern.nav.no"
-  ],
+  "ingresses": ["https://tilgangsmaskin.intern.nav.no"],
   "pdlgraph": "pdl-api.prod-fss-pub.nais.io",
   "pdl": "pdl-pip-api.prod-fss-pub.nais.io",
   "grupper": {
@@ -43,6 +41,11 @@
     {
       "name": "tilgang",
       "namespace": "aap",
+      "cluster": "prod-gcp"
+    },
+    {
+      "name": "modiapersonoversikt-api",
+      "namespace": "personoversikt",
       "cluster": "prod-gcp"
     }
   ],
